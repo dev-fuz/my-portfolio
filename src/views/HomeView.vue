@@ -57,7 +57,7 @@
                     <v-slider v-model="slider2" color="yellow" thumb-label="always"></v-slider>
                 </div>
             </div>
-            <v-col cols="12" class="padd" id="portfoliio">
+            <v-col cols="12" class="padd" id="portfolio">
                 <div class="first" id="project">
                     <v-row>
                         <v-col cols="12">
@@ -175,12 +175,46 @@
                     </v-row>
                 </div>
             </v-col>
+            <v-col cols="12" sm="12" class="px-16" id="contact">
+                <v-row>
+                    <v-col cols="12" sm="4">
+                        <div class="child">
+                            <h1>Contact Info</h1>
+                            <v-btn icon="fas fa-marker-alt" class="mt-10" variant="outlined"></v-btn><br />
+                            <span class="text-caption">Mirpur, Dhaka, Bangladesh</span><br />
+                            <v-btn icon="fas fa-phone-alt" class="mt-10" variant="outlined"></v-btn><br />
+                            <span class="text-caption">017**********</span><br />
+                            <span class="text-caption">017**********</span><br />
+                            <v-btn icon="fas fa-envelop-alt" class="mt-10" variant="outlined"></v-btn><br />
+                            <span class="text-caption">zrshishir@gmail.com</span><br />
+                            <span class="text-caption">017**********</span><br />
+                        </div>
+                    </v-col>
+                    <v-col cols="8" sm="8">
+                        <h1 class="mt-8">Send your message</h1>
+                        <v-divider></v-divider>
+                        <span class="text-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.</span>
+                        <v-row class="mt-10">
+                            <v-col cols="12" sm="6">
+                                <v-text-field label="Name" persistent-hint variant="outlined"></v-text-field>
+                            </v-col>
+                            <v-col cols="12" sm="6">
+                                <v-text-field label="Phone No" persistent-hint variant="outlined"></v-text-field>
+                            </v-col>
+                        </v-row>
+                        <v-textarea label="Message" persistent-hint variant="outlined"></v-textarea>
+                        <v-btn color="#FBDF7B" class="mt-4">Send Message</v-btn>
+                    </v-col>
+                </v-row>
+            </v-col>
         </v-container>
+        <FooterView />
     </v-app>
 </template>
 
 <script>
 import NavBar from '../components/NavBar.vue';
+import FooterView from '../components/FooterView.vue';
 export default {
     name: 'HomeView',
     setup() {
@@ -209,7 +243,8 @@ export default {
         }
     },
     components: {
-        NavBar
+        NavBar,
+        FooterView
     },
     data: () => ({
         //
