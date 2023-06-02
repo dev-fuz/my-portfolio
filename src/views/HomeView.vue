@@ -53,7 +53,7 @@
             </v-col>
             <div class="text-center mt-4">
                 <h2>What We Do</h2>
-                <div style="width: 120px; text-align: center;">
+                <div style="width: 120px; text-align: center; margin-left: auto; margin-right: auto;">
                     <v-slider v-model="slider2" color="yellow" thumb-label="always"></v-slider>
                 </div>
             </div>
