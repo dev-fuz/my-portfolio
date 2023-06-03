@@ -1,4 +1,4 @@
-# my-portfolio
+# my-portfolio simple vuetify and vuejs
 
 ## Project setup
 ```
